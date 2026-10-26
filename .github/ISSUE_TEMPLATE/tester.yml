@@ -1,0 +1,40 @@
+name: Tester-Zugang
+description: Als Tester mitmachen – Zugang zu diesem Repo und Hinweise auf neue Funktionen.
+title: "[Tester] "
+labels: ["tester", "neu"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Den Link zur Testversion bekommst du, sobald du als Tester eingetragen bist.
+        Hier fragst du den Zugang an.
+        **Bitte kein Passwort und keinen Wiederherstellungscode eintragen.**
+  - type: input
+    id: spielname
+    attributes:
+      label: Dein Spielername in RackWorks
+      description: Damit wir dein Konto zuordnen können (optional, falls du schon registriert bist).
+  - type: input
+    id: github
+    attributes:
+      label: GitHub-Name, der eingeladen werden soll
+      description: Leer lassen, wenn es der Account ist, mit dem du dieses Issue erstellst.
+  - type: input
+    id: system
+    attributes:
+      label: Womit spielst du hauptsächlich?
+      placeholder: "z. B. Windows 11, Chrome, Nvidia RTX 3060 / Handy"
+  - type: checkboxes
+    id: interesse
+    attributes:
+      label: Was interessiert dich besonders?
+      options:
+        - label: Server bauen / echte Hardware
+        - label: Rechenzentrum planen (Strom, Kühlung, Netz)
+        - label: Wirtschaft / Aufträge / Balancing
+        - label: Grafik / Leistung auf meinem Gerät
+        - label: Einsteigerfreundlichkeit
+  - type: textarea
+    id: sonst
+    attributes:
+      label: Sonst noch was?

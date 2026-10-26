@@ -1,0 +1,71 @@
+name: Fehler melden
+description: Etwas funktioniert nicht, sieht falsch aus oder stürzt ab.
+title: "[Fehler] "
+labels: ["fehler", "neu"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke fürs Melden! Bitte **keine Passwörter oder Wiederherstellungscodes** hier eintragen.
+  - type: textarea
+    id: was
+    attributes:
+      label: Was ist passiert?
+      description: Kurz beschreiben, was schiefging.
+    validations:
+      required: true
+  - type: textarea
+    id: schritte
+    attributes:
+      label: Wie kommt man dahin?
+      description: Schritt für Schritt, was du gemacht hast.
+      placeholder: |
+        1. Schrank öffnen
+        2. Server auf U3 ziehen
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: erwartet
+    attributes:
+      label: Was hättest du erwartet?
+  - type: dropdown
+    id: bereich
+    attributes:
+      label: Bereich
+      options:
+        - Halle / Bauen
+        - Werkbank / Server bauen
+        - Rack-Editor
+        - Strom / Kühlung / Netz
+        - Aufträge / Wirtschaft
+        - Management / Personal / Postfach
+        - Forschung / Level
+        - Leitstand / Kennzahlen
+        - Weltkarte
+        - Konto / Anmeldung / Spielstände
+        - Grafik / Leistung
+        - Sonstiges
+    validations:
+      required: true
+  - type: dropdown
+    id: schwere
+    attributes:
+      label: Wie schlimm?
+      options:
+        - Blockiert – ich komme nicht weiter
+        - Nervig – es geht, aber umständlich
+        - Kleinigkeit – Schönheitsfehler / Text
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Browser, Betriebssystem, Grafik
+      description: F3 im Spiel zeigt die Grafikkarte.
+      placeholder: "z. B. Firefox 141, Windows 11, AMD Radeon 780M"
+  - type: textarea
+    id: bilder
+    attributes:
+      label: Screenshots / Video
+      description: Einfach hier hineinziehen oder einfügen.

@@ -1,0 +1,35 @@
+name: Feedback
+description: Allgemeiner Eindruck nach einer Spielrunde – was gut ist, was nicht.
+title: "[Feedback] "
+labels: ["feedback", "neu"]
+body:
+  - type: input
+    id: dauer
+    attributes:
+      label: Wie lange hast du gespielt / wie weit bist du gekommen?
+      placeholder: "z. B. 1 Stunde, Level 5, zweite Halle"
+  - type: textarea
+    id: gut
+    attributes:
+      label: Was hat dir gefallen?
+  - type: textarea
+    id: schlecht
+    attributes:
+      label: Was hat genervt oder war unklar?
+  - type: textarea
+    id: fehlt
+    attributes:
+      label: Was fehlt dir?
+      description: Infos, Funktionen oder Teile, die du vermisst hast.
+  - type: textarea
+    id: festgefahren
+    attributes:
+      label: Wo bist du hängen geblieben oder hast aufgehört?
+  - type: dropdown
+    id: wieder
+    attributes:
+      label: Würdest du weiterspielen?
+      options:
+        - Ja, auf jeden Fall
+        - Vielleicht
+        - Eher nicht

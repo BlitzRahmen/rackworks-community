@@ -1,0 +1,42 @@
+name: Idee / Wunsch
+description: Neue Funktion, Verbesserung oder ein echtes Bauteil, das fehlt.
+title: "[Idee] "
+labels: ["idee", "neu"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Schau gern vorher in die [Roadmap](../blob/main/ROADMAP.md) – vielleicht ist es schon geplant.
+  - type: textarea
+    id: idee
+    attributes:
+      label: Was wünschst du dir?
+    validations:
+      required: true
+  - type: textarea
+    id: warum
+    attributes:
+      label: Warum? Was würde es besser machen?
+      description: Welches Problem löst es, oder was macht es spannender?
+  - type: dropdown
+    id: art
+    attributes:
+      label: Art
+      options:
+        - Neue Spielfunktion
+        - Verbesserung einer bestehenden Funktion
+        - Bedienung / Oberfläche
+        - Echtes Bauteil fehlt / falsche Werte
+        - Balancing (zu leicht / zu schwer)
+        - Sonstiges
+    validations:
+      required: true
+  - type: input
+    id: quelle
+    attributes:
+      label: Link (optional)
+      description: Bei Bauteilen gern das Datenblatt oder die Herstellerseite.
+  - type: textarea
+    id: bilder
+    attributes:
+      label: Skizze / Screenshot (optional)
